@@ -1,18 +1,23 @@
 produkty = {
-    'ziemniaki': 2,
-    'ryz': 1,
-    'marchewki': 3,
+    'ziemniaki': 1.99,
+    'bataty': 6.99,
+    'pomidory': 2.5,
     'piwo': 7
 }
 
 koszyk = {}
+
 for p in produkty:
-    print(f- {p},(produkty[p])
-jaki_produkt = input("Jaki produkt Cie interesuje ?")
-ile = float(input(f'Ile chcesz kupić:' {jaki_produkt})
+    print(f"- {p} - {produkty[p]} PLN ")
 
-koszyk{jaki_produkt} = ile
+while True:
+    jaki_produkt = input("Jaki produkt chcesz kupić (wpisz k by zakończyć)? ")
+    if jaki_produkt == 'k':
+        print(koszyk)
+        break
+    ile = float(input(f"Ile chcesz kupić: {jaki_produkt}? "))
+    koszyk[jaki_produkt] = ile * produkty[jaki_produkt]
 
-print(f'Koszyk')
-
-
+for wklad in koszyk:
+    print(f" - Koszt - {wklad} - {koszyk[wklad]}")
+print()

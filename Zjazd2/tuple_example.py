@@ -24,3 +24,4 @@ print('Zabawa ile jest imion Karolina',imiona.count('Karolina'))
 print('Zabawa indeksem Karolina',imiona.index('Karolina'))
 
 
+
